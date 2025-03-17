@@ -48,7 +48,7 @@ def contact(request):
                 message=request.POST['message'],
               )
             mycontact.save()
-            return redirect('reservations')
+            return redirect('contact')
         else:
             return render(request,'contact.html'),
 
