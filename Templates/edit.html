@@ -17,22 +17,22 @@
             {% csrf_token %}
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
-              <input type="text" name="name" class="form-control" value="{{ book.name }}" placeholder="Your Name" required="">
+              <input type="text" name="name" class="form-control" value="{{ bookings.name }}" placeholder="Your Name" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="email" class="form-control" value="{{ book.email}}" name="email" id="email" placeholder="Your Email" required="">
+              <input type="email" class="form-control" value="{{ bookings.email }}" name="email" id="email" placeholder="Your Email" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="text" class="form-control" value="{{ book.phone }}" name="phone" id="phone" placeholder="Your Phone" required="">
+              <input type="text" class="form-control" value="{{ bookings.phone }}" name="phone" id="phone" placeholder="Your Phone" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="date" name="date" class="form-control" value="{{ book.date}}" id="date" placeholder="Date" required="">
+              <input type="date" name="date" class="form-control" value="{{ bookings.date }}" id="date" placeholder="Date" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="time" class="form-control" name="time" value="{{ book.time}}" id="time" placeholder="Time" required="">
+              <input type="time" class="form-control" name="time" value="{{ bookings.time }}" id="time" placeholder="Time" required="">
             </div>
             <div class="col-lg-4 col-md-6">
-              <input type="number" class="form-control" name="people" value="{{ book.people}}" id="people" placeholder="# of people" required="">
+              <input type="number" class="form-control" name="people" value="{{ bookings.people }}" id="people" placeholder="# of people" required="">
             </div>
           </div>
 

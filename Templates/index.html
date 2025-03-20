@@ -5,7 +5,7 @@
     {% load static %}
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Restaurantly Bootstrap Template</title>
+  <title>Bite & Bahati Restaurant</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -45,13 +45,12 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">barrackalusa@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+254711698640</span></i>
         </div>
         <div class="languages d-none d-md-flex align-items-center">
           <ul>
             <li>En</li>
-            <li><a href="#">De</a></li>
           </ul>
         </div>
       </div>
@@ -60,22 +59,23 @@
     <div class="branding d-flex align-items-cente">
 
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
           <!-- Uncomment the line below if you also wish to use an image logo -->
           <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1 class="sitename">Villa Rosa</h1>
+          <h1 class="sitename">Bite & Bahati</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'menu' %}">Menu</a></li>
-            <li><a href="{% url 'specials' %}">Specials</a></li>
-            <li><a href="{% url 'events' %}">Events</a></li>
-            <li><a href="{% url 'chefs' %}">Chefs</a></li>
-            <li><a href="{% url 'gallery' %}">Gallery</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="#hero" class="active">Home<br></a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'menu' %}">Menu</a></li>
+                <li><a href="{% url 'specials' %}">Specials</a></li>
+                <li><a href="{% url 'events' %}">Events</a></li>
+                <li><a href="{% url 'chefs' %}">Chefs</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -98,8 +98,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Villa Rosa</span></h2>
-            <p data-aos="fade-up" data-aos-delay="200">Delivering great food for more than 18 years!</p>
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Bite & Bahati</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">Your hunger, Our Mission! </p>
             <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
               <a  class="cta-btn" href="{% url 'menu' %}">Our Menu</a>
               <a  class="cta-btn" href="{% url 'book' %}">Book a Table</a>
@@ -121,7 +121,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>WHY US</h2>
-        <p>Why Choose Our Restaurant</p>
+        <p>Why Choose Bite & Bahati</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -132,7 +132,7 @@
             <div class="card-item">
               <span>01</span>
               <h4><a href="" class="stretched-link">✔ Unmatched Hospitality: </a></h4>
-              <p>At Villa Rosa, you're more than a guest—you're part of our family. Our attentive staff goes above and beyond to ensure you feel truly welcomed.</p>
+              <p>At Bite & Bahati, you're more than a guest—you're part of our family. Our attentive staff goes above and beyond to ensure you feel truly welcomed.</p>
             </div>
           </div><!-- Card Item -->
 
@@ -140,7 +140,7 @@
             <div class="card-item">
               <span>02</span>
               <h4><a href="" class="stretched-link">✔ Prime Location: </a></h4>
-              <p>Enjoy the perfect blend of serenity and accessibility. Villa Rosa places you in the heart of the city, with everything you need just moments away.</p>
+              <p>Enjoy the perfect blend of serenity and accessibility. Bite & Bahati places you in the heart of the city, with everything you need just moments away.</p>
             </div>
           </div><!-- Card Item -->
 
@@ -209,7 +209,7 @@
               <div class="testimonial-item">
             <p>
               <i class=" bi bi-quote quote-icon-left"></i>
-                <span>What a gem! Villa Rosa exceeded all of our expectations. From the moment we arrived, we were treated like family. The food was incredible, the rooms were clean and comfortable, and the surrounding area was perfect for exploring. We left feeling refreshed and happy.</span>
+                <span>What a gem! Bite & Bahati exceeded all of our expectations. From the moment we arrived, we were treated like family. The food was incredible, the rooms were clean and comfortable, and the surrounding area was perfect for exploring. We left feeling refreshed and happy.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
@@ -222,7 +222,7 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Our time at Villa Rosa was nothing short of amazing. From the beautiful decor to the impeccable service, everything was perfect. We especially loved the spa services and the tranquil garden. If you're looking for a peaceful getaway with great amenities, this is the place!</span>
+                  <span>Our time at Bite & Bahati was nothing short of amazing. From the beautiful decor to the impeccable service, everything was perfect. We especially loved the spa services and the tranquil garden. If you're looking for a peaceful getaway with great amenities, this is the place!</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
@@ -235,7 +235,7 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Our stay at Villa Rosa was absolutely wonderful! The location is stunning, and the atmosphere is so peaceful. The staff made us feel incredibly welcome, and the food was delicious. We can't wait to return!</span>
+                  <span>Our stay at Bite & Bahati was absolutely wonderful! The location is stunning, and the atmosphere is so peaceful. The staff made us feel incredibly welcome, and the food was delicious. We can't wait to return!</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
@@ -248,7 +248,7 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>We had the best experience staying at Villa Rosa. The property is beautiful, surrounded by nature, and so relaxing. The service was exceptional – the staff went above and beyond to make sure we had everything we needed. Highly recommend for a quiet and luxurious retreat.</span>
+                  <span>We had the best experience staying at Bite & Bahati. The property is beautiful, surrounded by nature, and so relaxing. The service was exceptional – the staff went above and beyond to make sure we had everything we needed. Highly recommend for a quiet and luxurious retreat.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
@@ -261,7 +261,7 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Villa Rosa provided a truly unforgettable experience. The rooms were spacious and well-appointed, and the views from the balcony were breathtaking. The staff was friendly, attentive, and always ready to help. We will definitely be back for another stay!</span>
+                  <span>Bite & Bahati provided a truly unforgettable experience. The rooms were spacious and well-appointed, and the views from the balcony were breathtaking. The staff was friendly, attentive, and always ready to help. We will definitely be back for another stay!</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
                 <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
@@ -292,13 +292,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Restaurantly</span>
+            <span class="sitename">Bite & Bahati</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Kipro Center</p>
+            <p>Nairobi, Kenya</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254711698640</span></p>
+            <p><strong>Email:</strong> <span>barrackalusa@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -312,23 +312,14 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            <li><a href="{% url 'gallery' %}">Gallery</a></li>
+            <li><a href="{% url 'menu' %}">Menu</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
           </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
+
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
@@ -344,16 +335,7 @@
       </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Restaurantly</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+   
 
   </footer>
 

@@ -1,24 +1,27 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
 
-class Bookings (models.Model):
+class Bookings(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  # Link to user
     name = models.CharField(max_length=50)
     email = models.EmailField()
     phone = models.CharField(max_length=15)
     date = models.DateField()
     time = models.TimeField()
-    people=models.IntegerField(default=0)
+    people = models.IntegerField(default=0)
     message = models.TextField()
 
     def __str__(self):
-        return self.name
+        return f"{self.name} - {self.date} ({self.user.username if self.user else 'Guest'})"
 
 class Contact (models.Model):
     name = models.CharField(max_length=50)
     email = models.EmailField()
     subject = models.CharField(max_length=50)
     message = models.TextField()
+
 
     def __str__(self):
         return self.name
