@@ -1,0 +1,113 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Events Section -->
+<section id="events" class="events section">
+
+  <img class="slider-bg" src="{% static 'assets/img/events-bg.jpg' %}" alt="Events Background" data-aos="fade-in">
+
+  <div class="container">
+
+    <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/events-slider/events-slider-1.jpg' %}" class="img-fluid" alt="Birthday Party">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Birthday Parties</h3>
+              <div class="price">
+                <p><span>$189</span></p>
+              </div>
+              <p class="fst-italic">
+                Celebrate your special day with a fun-filled birthday party, complete with decorations, catering, and entertainment.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Customizable themes and decorations</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Full-service catering and cake options</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Fun activities and entertainment for all ages</span></li>
+              </ul>
+              <p>
+                Book your birthday party with us and enjoy a hassle-free celebration with friends and family.
+              </p>
+            </div>
+          </div>
+        </div><!-- End Slider item -->
+
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/events-slider/events-slider-2.jpg' %}" class="img-fluid" alt="Private Party">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Private Parties</h3>
+              <div class="price">
+                <p><span>$290</span></p>
+              </div>
+              <p class="fst-italic">
+                Host an exclusive private party in a stylish and intimate setting, tailored to your preferences.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Exclusive venue access for privacy</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Personalized menu and bar service</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Live music or DJ entertainment available</span></li>
+              </ul>
+              <p>
+                Create unforgettable memories with a private party designed just for you and your guests.
+              </p>
+            </div>
+          </div>
+        </div><!-- End Slider item -->
+
+        <div class="swiper-slide">
+          <div class="row gy-4 event-item">
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/events-slider/events-slider-3.jpg' %}" class="img-fluid" alt="Custom Party">
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 content">
+              <h3>Custom Parties</h3>
+              <div class="price">
+                <p><span>$99</span></p>
+              </div>
+              <p class="fst-italic">
+                Plan a unique and personalized event with our customizable party options.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-circle"></i> <span>Flexible venue setup and decorations</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Entertainment and catering tailored to your needs</span></li>
+                <li><i class="bi bi-check2-circle"></i> <span>Perfect for any occasion, big or small</span></li>
+              </ul>
+              <p>
+                Work with our event planners to bring your dream party to life.
+              </p>
+            </div>
+          </div>
+        </div><!-- End Slider item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Events Section -->
+
+{% endblock %}

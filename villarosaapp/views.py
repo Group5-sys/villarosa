@@ -98,9 +98,9 @@ def edit(request, id):
 
 @login_required
 def delete(request, id):
-    booking = get_object_or_404(Bookings, id=id, user=request.user)  # Restrict deletion
+    booking = Bookings.objects.get(id=id)
     booking.delete()
-    return redirect('/book')
+    return redirect('/admindashboard')
 
 #mpesa api--------
 

@@ -23,11 +23,11 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
 
     path('book/', views.book, name='book'),
-    path('edit/<int:id>', views.edit, name='edit'),
+    path('edit/<int:id>/', views.edit, name='edit'),
 
     path('reservations/', views.reservations, name='reservations'),
 
-    path('delete/<int:id>', views.delete, name='delete'),
+    path('delete/<int:id>/', views.delete, name='delete'),
 
     path('login/', views.login_view, name='login'),
     path('adminlogin/', views.admin_login_view, name='adminlogin'),
